@@ -5,7 +5,7 @@ const relatives = ["Raj", "David", "Lily", "Edwar", "Rebecca"];
 const App = () => {
   return (
     <div id="main">
-      <ol key="relativeList">
+      <ol id="relativeList">
         {relatives.map((relative, i) => {
           return <li key={`relativeListItem${i + 1}`}>{relative}</li>;
         })}

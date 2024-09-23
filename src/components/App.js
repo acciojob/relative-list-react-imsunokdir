@@ -7,7 +7,14 @@ const App = () => {
     <div id="main">
       <ol id="relativeList">
         {relatives.map((relative, i) => {
-          return <li key={`relativeListItem${i + 1}`}>{relative}</li>;
+          return (
+            <li
+              key={`relativeListItem${i + 1}`}
+              id={`relativeListItem${i + 1}`}
+            >
+              {relative}
+            </li>
+          );
         })}
       </ol>
     </div>
